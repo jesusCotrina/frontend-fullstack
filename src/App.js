@@ -6,7 +6,7 @@ import CreateUser from './components/CreateUser'
 function App() {
   const [users, setUsers] = useState([])
   useEffect(() => {
-    fetch('http://backend-fullsstack-production.up.railway.app:8000/api/users')
+    fetch('https://backend-fullsstack-production.up.railway.app/api/users')
       .then(res => res.json())
       .then(res => setUsers(res))
   }, [])
