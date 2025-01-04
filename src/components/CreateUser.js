@@ -12,7 +12,7 @@ export default function CreateUser() {
     function handleClickForm(e) {
         e.preventDefault()
 
-        fetch('http://localhost:8000/api/users', {
+        fetch('https://backend-fullsstack.onrender.com/api/users/', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
