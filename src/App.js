@@ -7,9 +7,9 @@ import VoiceflowWidget from './components/chatbot';
 function App() {
   const [users, setUsers] = useState([])
   useEffect(() => {
-    // fetch('https://backend-fullsstack.onrender.com/api/users') 
-    //   .then(res => res.json())
-    //   .then(res => setUsers(res))
+    fetch('https://backend-fullsstack.onrender.com/api/users/') 
+      .then(res => res.json())
+      .then(res => setUsers(res))
   }, [])
   return (
     <main>
